@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Tree</title>
+
+    <style>
+      img {
+        position: absolute;
+      }
+
+      .hide {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      onchange="toggleImage('lightsImage')"
+      checked
+      type="checkbox"
+      name="lights"
+    />
+    <label>Lights</label>
+    <input
+      onchange="toggleImage('starsImage')"
+      checked
+      type="checkbox"
+      name="stars"
+    />
+    <label>Stars</label>
+    <input
+      onchange="toggleImage('topperImage')"
+      checked
+      type="checkbox"
+      name="topper"
+    />
+    <label>Topper</label>
+    <input
+      onchange="toggleImage('memeImage')"
+      checked
+      type="checkbox"
+      name="meme"
+    />
+    <label>Meme</label>
+    <input
+      onchange="toggleImage('nieveImage')"
+      checked
+      type="checkbox"
+      name="nieve"
+    />
+    <label>Nieve</label>
+    <br />
+    <img src="images/tree.png" />
+    <img id="starsImage" src="images/stars.png" />
+    <img id="topperImage" src="images/topper.png" />
+    <img id="lightsImage" src="images/lights.png" />
+    <img id="memeImage" src="images/meme.png" width="200" height="200" HSPACE=0 , VSPACE=150/>
+    <img id="nieveImage" src="images/nieve2.gif" width="300" height="400"/>
+
+    
+    <script>
+      function toggleImage(imageId) {
+        document.getElementById(imageId).classList.toggle("hide");
+      }
+    </script>
+  </body>
+</html>
